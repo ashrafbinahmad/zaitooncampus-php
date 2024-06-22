@@ -1,0 +1,195 @@
+.nav {
+  text-align: center;
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.nav .logout {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  margin: 0;
+}
+.nav .avatar {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  /* padding: .5rem; */
+  margin: 0.1rem;
+}
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding-inline: 1rem;
+  overflow: hidden;
+  display: flex;
+
+  margin: auto;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+}
+.nav ul li {
+  flex: 1;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+}
+.nav ul li:hover {
+  background-color: #ffffff1c;
+}
+.nav ul li.active {
+  background-color: #ffffff64;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  background-color: #c6d6e9;
+  padding: 1rem;
+  border-radius: 4px;
+}
+.container h2 {
+  margin: 1rem 0 0 0;
+  color: #0050b1;
+}
+.container hr {
+  margin: 0;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 5px solid #ffffff48;
+}
+
+.container input,
+.container select,
+.container textarea {
+  margin: 0 0 1rem 0;
+  padding: 1rem;
+  border: 1px solid #000000ab;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+.container input:focus {
+  outline: none;
+  border: 1px solid #000000ab;
+  box-shadow: 0 0 0 2px #000000ab;
+}
+.container input[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.container button[type="submit"]:hover {
+  background-color: #0050b1;
+}
+.container button[data-type="clear"] {
+  background-color: rgba(255, 0, 0, 0.05);
+  color: rgb(130, 3, 3);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 100%;
+  padding: 1rem;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 1rem;
+}
+.container button[data-type="clear"]:hover {
+  background-color: rgba(255, 0, 0, 0.177);
+}
+.container label {
+  margin: 1rem 0 0 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #002a5d;
+}
+.container div[data-type="dualspace"] {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container div[data-type="dualspace"] ::-webkit-scrollbar-thumb {
+  background-color: #002a5d92;
+}
+.container div[data-type="dualspace"] ::-webkit-scrollbar-track {
+  background-color: #ffffff51;
+}
+.container div[data-type="dualspace"] > div {
+  flex: 1 40%;
+  padding: 1rem;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.container div[data-type="dualspace"] > div:nth-child(2) {
+  border-left: 2px solid #8383838f;
+}
+.container div[data-type="card"] {
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  position: relative;
+}
+.container div[data-type="card"]:hover {
+  box-shadow: 0 0 0 2px #000000ab;
+}
+.container div[data-type="controllers"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  background-color: #fff;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.container div[data-type="controllers"] *:hover {
+  color: blue;
+}
+.container button {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 654px) {
+  .container div[data-type="dualspace"] {
+    flex-direction: column;
+  }
+  .container div[data-type="dualspace"] > div {
+    border-left: none;
+    border-top: 2px solid #8383838f;
+  }
+  .container div[data-type="dualspace"] > div:nth-child(1) {
+    order: 1;
+  }
+  .container div[data-type="dualspace"] > div:nth-child(2) {
+    order: 2;
+    border-top: none;
+  }
+}

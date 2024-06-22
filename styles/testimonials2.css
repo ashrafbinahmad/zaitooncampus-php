@@ -1,0 +1,107 @@
+.testimonials_yt_total h2 {
+  font-size: 20px;
+    color: #137931;
+    font-weight: bold;
+    font-family: var(--header-font);
+    /* text-align: right; */
+    white-space: pre-line;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 81px;
+}
+.testimonials_yt_total h2 > big {
+  font-size: 40px;
+  color: #35a857;
+}
+.quotes {
+  --max-width: 50rem;
+  margin: auto;
+  max-width: var(--max-width);
+  position: relative;
+  margin-bottom: 2rem;
+}
+.quotes > ul {
+  color: black;
+  text-align: center;
+  overflow: auto;
+  white-space: nowrap;
+  scroll-margin-inline: 10rem;
+  scroll-margin-inline-start: 1rem;
+  scroll-margin-inline-end: 1rem;
+  padding-inline: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.quotes > ul::-webkit-scrollbar {
+  width: 5rem;
+  display: none;
+}
+
+.quotes > ul > li {
+  margin-top: 8rem;
+  margin-inline: 2rem;
+  border-radius: 20px;
+  background-color: #9dc7a985;
+  display: inline-block;
+  width: var(--max-width);
+  max-width: 90vw;
+  scroll-snap-align: center;
+}
+.quotes p,
+.quotes h4,
+.quotes h5 {
+  max-width: calc(var(--max-width) - 5rem);
+  white-space: wrap;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+.quotes .arrow {
+  font-size: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background: #9ac5a6;
+  border-radius: 50%;
+  position: absolute;
+  top: 60%;
+  cursor: pointer;
+  color: white;
+  border: solid #0080004a;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+.arrow.next {
+  right: -54px;
+}
+.arrow.previous {
+  left: -54px;
+}
+.arrow p {
+  margin-top: -13px;
+}
+.testi_photo {
+  width: 116px;
+  height: 131px;
+  margin-top: -5rem;
+  border-radius: 40%;
+  margin-bottom: 2rem;
+  object-fit: cover;
+  border: solid #a0bd98;
+}
+.testi_quote {
+  margin-bottom: 2rem;
+}
+.testi_name {
+  font-size: 18px;
+  color: #37a537;
+}
+.testi_title {
+  color: #00000094;
+  font-size: 12px;
+  margin-bottom: 2rem;
+}

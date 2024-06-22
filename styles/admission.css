@@ -1,0 +1,91 @@
+.admission > header {
+    height: 30rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.admission .slideshow {
+    width: 100%;
+    height: 100%;
+}
+.admission .slideshow > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.admission .heading_and_btn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 0 2rem 2rem 2rem;
+    background: linear-gradient(3deg, #000000b8, transparent);
+}
+.admission .heading_and_btn > h1 {
+    color: white;
+    font-size: 37px;
+} 
+.admission .heading_and_btn > a > button {
+    padding: 11px 17px;
+    background: #21b24b;
+    color: black;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 19px;
+    /* box-shadow: 0px 2px 4px 0px #0000008c; */
+    flex: 0 0;
+    width: max-content;
+    border: 0;
+    outline: 0;
+} 
+.admission > article {
+    max-width: 800px;
+    margin: 3rem auto;
+    font-size: 26px;
+    padding: 0 1.5rem;
+}
+.admission > article > h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.admission > article > h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.admission > article > p {
+    text-align: justify;
+    line-height: 37px;
+    margin-bottom: 2rem;
+}
+.admission > article > ul {
+    margin-left: 25px;
+    list-style: circle;
+    font-size: 24px;
+}
+.admission > article > ul > li {
+    margin-bottom: 17px;
+    text-align: justify;
+}
+.admission article a {
+    border-bottom: 1px dashed;
+}
+.admission article a:hover {
+    border-bottom: 1px solid;
+}
+
+@media screen and (max-width: 635px) {
+    .admission > article {
+        font-size: 19px;
+    }
+    .admission > article > p {
+        line-height: 28px;
+    }
+    .admission > article > ul > li {
+        font-size: 18px;
+    }
+}

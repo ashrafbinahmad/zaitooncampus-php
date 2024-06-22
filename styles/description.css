@@ -1,0 +1,264 @@
+.desc_section.total {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  min-height: 60vh;
+}
+.desc_section .container {
+  overflow: hidden;
+  display: grid;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 4rem;
+  grid-template-columns: 1fr 1fr;
+}
+.desc_section .container > div {
+  flex: 1;
+  display: flex;
+}
+.desc,
+.heading {
+  padding: 2rem 1rem 3rem 0.1rem;
+}
+.desc_section .container .heading {
+  flex-direction: column;
+}
+.desc_section .welcome {
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  color: #13793182;
+  font-weight: bold !important;
+  font-family: var(--header-font) !important;
+  white-space: pre-line;
+}
+
+.desc_section h1 {
+  font-size: 20px;
+  color: #137931;
+  font-weight: bold;
+  font-family: var(--header-font);
+  /* text-align: right; */
+  white-space: pre-line;
+  margin-bottom: 20px;
+}
+.desc_section .heading .btn {
+  background-color: #3d4054;
+  color: #ffffff;
+  padding: 0.5rem 0.6rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.desc_section .heading .btn:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+.video_thump {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.thump_description {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  transition: all 0.5s;
+}
+.video_thump:hover .thump_description {
+  bottom: 0%;
+}
+.video_thump > img {
+  width: 100%;
+}
+.desc_section .desc {
+  font-size: 1.3rem;
+  color: #3d4054;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 0.5rem;
+  white-space: pre-line;
+  margin-bottom: 2rem;
+}
+.desc_section .container .desc p {
+  font-size: 17px;
+  font-family: var(--body-font);
+  font-weight: 400;
+}
+.vidtour_btn {
+  outline: 0;
+  border: solid #137931;
+  background: white;
+  color: #137931;
+  padding: 9px 11px;
+  border-radius: 9px;
+  margin-top: 14px;
+  cursor: pointer;
+}
+.vidtour_btn {
+  background: white;
+  color: #137931;
+  
+}
+.desc_section .vert_line {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 1px solid #3d4054;
+  height: 80%;
+  top: 10%;
+  transition: 1s all ease-in-out;
+}
+.desc_section .vert_line .isInCenter {
+  height: 100%;
+}
+.desc > div,
+.heading > div {
+  padding: 1rem;
+}
+.campuses {
+  height: 100%;
+}
+.campus_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 87%;
+  gap: 1rem;
+}
+.campus_list > li {
+  height: 90px;
+  /* background-image: ; */
+  background-size: cover;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  /* align-items: center; */
+  border-radius: 13px;
+  cursor: pointer;
+  transition: all 0.5s 0.2s;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.campus_list > li:hover {
+  height: 95% !important;
+}
+
+.campus_list > li:hover .bgc {
+  height: 50px !important;
+  background-color: #07451a65 !important;
+}
+.campus_list > li:nth-child(1) {
+  height: 95%;
+}
+.campus_list > li:nth-child(1) > .bgc {
+  height: 50px;
+  background-color: #07451a65;
+}
+
+.campus_list:hover li:nth-child(1) {
+  height: 90px;
+}
+.campus_list:hover li:nth-child(1) > .bgc {
+  height: 100%;
+  background-color: #137931;
+}
+
+.campus_list > li > .bgc {
+  position: absolute;
+  object-fit: cover;
+  background-color: #137931;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+}
+.campus_list > li > img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.campus_list > li > .btn_explore {
+  z-index: 2;
+  position: absolute;
+  font-size: 15px;
+  padding: 6px 10px;
+  background: #137931;
+  border-radius: 5px;
+  right: 18px;
+  bottom: 18px;
+}
+.campus_list > li > .btn_explore:hover {
+  background: #0e5f26;
+}
+
+.campus_list > li > p {
+  padding: 17px 40px 26px 24px;
+  z-index: 7;
+  font-family: var(--header-font);
+  height: min-content;
+  text-shadow: 0px 3px 6px #08271b;
+}
+@media screen and (max-width: 940px) {
+  .desc_section .total {
+    flex-direction: column;
+  }
+
+  .desc_section .container {
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+  .desc {
+    padding: 2rem;
+  }
+  .desc > div {
+    padding: 0;
+  }
+  .desc_section .container .heading {
+    align-items: center;
+    display: block;
+    padding: 0;
+  }
+  .desc_section .container h1 {
+    text-align: center;
+    font-size: auto;
+  }
+  .desc_section .container .welcome {
+    text-align: center;
+  }
+  .desc_section .heading .btn {
+    margin: 2rem auto;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .desc .desc_text {
+    text-align: justify;
+  }
+  .desc_section .vert_line {
+    display: none;
+  }
+  .campuses {
+    height: 42rem;
+    margin-bottom: 3rem;
+  }
+  .campus_list {
+    height: 90%;
+  }
+}

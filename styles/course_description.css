@@ -1,0 +1,186 @@
+#course-description header {
+    height: 30rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#course-description .slideshow {
+    width: 100%;
+    height: 100%;
+}
+#course-description .slideshow > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+#course-description .heading_and_btn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 0 2rem 2rem 2rem;
+    background: linear-gradient(3deg, #000000b8, transparent);
+    text-align: center;
+}
+#course-description .heading_and_btn > h1 {
+    color: white;
+    font-size: 37px;
+} 
+#course-description .heading_and_btn > button {
+    padding: 11px 17px;
+    background: #21b24b;
+    color: black;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 19px;
+    /* box-shadow: 0px 2px 4px 0px #0000008c; */
+    flex: 0 0;
+    width: max-content;
+    border: 0;
+    outline: 0;
+    margin: 0 auto;
+} 
+#course-description .thickLine {
+    border: 0;
+  height: 3px;
+  /* background: #333; */
+  max-width: 1500px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, #969cb812, #57608ea6, #969cb812);
+}
+#course-description .line {
+    width: .5px;
+    /* height: 100%; */
+    background-color: black;
+    margin: 0 auto;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    min-height: 3rem;
+    flex: 1 100%;
+}
+#course-description .total .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#course-description .total h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-family: var(--header-font);
+    /* color: #242424; */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#course-description .zaitoonImg {
+    width: 100%;
+    filter: brightness(0.5);
+}
+#course-description .desc_container {
+    padding: 1rem;
+}
+#course-description .desc {
+    text-align: center;
+    font-weight: 300;
+    max-width: 700px;
+    margin: 3rem auto;
+    color: rgba(0, 0, 0, 0.755);
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 26px;
+
+}
+#course-description .desc p {
+    white-space: pre-line;
+    text-align: justify;
+    line-height: 37px;
+    margin-bottom: 2rem;
+}
+#course-description .desc p.welcome {
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+#course-description .yt_iframe {
+    border-radius: 20px;
+}
+
+#course-description .desc > h3 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    font-family: var(--header-font);
+    color: var(--primary-color);
+}
+#course-description .features_container {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    align-content:space-between ;
+    padding: 1rem;
+}
+#course-description .feature {
+    flex: 1 30% ;
+    padding: 1rem;
+    border: solid 1px rgba(0, 0, 0, 0.227);
+    border-bottom: solid 5px var(--secondary-color);
+    background-color: #fff;
+}
+#course-description .feature ul {
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+    margin-top: 1rem;
+
+}
+#course-description .feature h3 {
+    font-size: 24px;
+    font-weight: 900;
+    font-family: var(--header-font);
+    color: rgb(85, 85, 85);
+}
+#course-description .feature ul li {
+    font-family: var(--header-font);
+    padding: .2rem 0;
+    font-size: 1.1rem;
+}
+.other_courses {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    background: white;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.other_courses > a {
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.other_courses > a.active_course {
+    background: #158e37;
+    color: white;
+
+}
+@media screen and (max-width: 768px) {
+    #course-description .feature {
+        flex: 1 100% ;
+    }
+    #course-description .desc {
+        font-size: 19px;
+    }
+    #course-description .desc > p {
+        line-height: 28px;
+    }
+    #course-description .heading_and_btn > h1 {
+        font-size: 30px;
+    } 
+}

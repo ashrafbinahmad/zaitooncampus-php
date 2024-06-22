@@ -1,0 +1,37 @@
+.gallery {
+    background-color: #242943;
+    color: white;
+    min-height: 60vh;
+    padding: 3rem 0;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: .5rem;
+
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.nav > span {
+    color: rgba(255, 255, 255, 0.423);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .5rem 1rem;
+    transition: all .5s ease-in-out;
+    background-color: #3b3b53;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.nav > span.isActive {
+    color: #ffffff;
+    background-color: #12141e;
+}
+.nav > span:hover {
+    color: #f5f5f5;
+}
