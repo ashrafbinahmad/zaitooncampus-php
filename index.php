@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <?php include 'components/home/notification.php'; ?>
+    <!-- <?php include 'components/home/notification.php'; ?> -->
     <?php include 'components/navbar.php'; ?>
     <?php include 'components/home/header.php'; ?>
     <?php include 'components/home/overview.php'; ?>

@@ -53,6 +53,10 @@
                     name: 'Courses',
                     link: '/admin/courses/',
                 },
+                {
+                    name: 'Set password',
+                    link: '/admin/change-password/',
+                },
             ]
             componentDidMount() {
                 clientApp()
@@ -81,15 +85,18 @@
                         <nav className='nav'>
 
                             <h1 className='py-1'>Zaitoon Admin Panel</h1>
-                            <button className='logout' onClick={() => {
-                                const auth = firebase.auth()
-                                auth.signOut()
-                                window.location = '/admin/auth/'
+                            
+                                
+                                <button className='logout' onClick={() => {
+                                    const auth = firebase.auth()
+                                    auth.signOut()
+                                    window.location = '/admin/auth/'
 
-                            }}>
-                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                }}>
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
 
-                            </button>
+                                </button>
+                            
                             <ul className='menu'>
                                 {this.menuItems.map((item, index) => (
                                     <li key={index}
